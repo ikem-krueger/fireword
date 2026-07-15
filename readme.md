@@ -2,12 +2,12 @@
 
 > I've also made a quick [web app to generate passwords](http://channikhabra.github.io/fireword/) which use this script.
 
-##waw (what and why)
+## What and why
 It's a simple tool to convert memorable passwords to hard-to-crack passwords.  
 I heard somewhere that any password you can remember is not strong enough. But I've been still using memorable passwords which I thought were safe enough. I used a pattern like &lt;mysecretword&gt;&lt;site_name&gt; etc for most websites I log in to. But I've involved in a kinda research project (in which the system prepares a dictionary of passwords targeting a single user by gathering information about her from her social accounts), and discovered that someone with access to my social accounts (although I don't have many) can easily guess those passwords.   
 So here is a quick password generator (quick in the sense that it took me very less time building it)  
 
-## How it work
+## How it works
 This script receives a password from command line, convert it into sha512 hash, and mingle some characters to increase the complexity of the password.
 It convert some special character on even places with symbols etc. (Read the code, it's simple. Really.)  
 So the result is a long string which can be used as password on real sites.  
@@ -25,7 +25,7 @@ Use an easy to remember pattern which would be different for different sites. e.
 >     greenGooglePants  
 >     orangeStumbleuponPants  
 
-## firewor.py
+## fireword.py
 Python script for standalone use.
 > Usage: python fireword.py <myFacyPassword> [length]
 
